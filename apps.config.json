@@ -29,9 +29,26 @@
         "assets/screenshots/phone-health.png"
       ],
       "downloads": [
-        { "label": "Android", "kind": "APK", "platform": "android", "match": "^Bastion-[\\d.]+\\.apk$" },
-        { "label": "Windows", "kind": "EXE", "platform": "windows", "match": "_x64-setup\\.exe$", "hint": "Installation rapide, par utilisateur" },
-        { "label": "Windows", "kind": "MSI", "platform": "windows", "match": "_x64_en-US\\.msi$", "hint": "Installation classique, toute la machine" }
+        {
+          "label": "Android",
+          "kind": "APK",
+          "platform": "android",
+          "match": "^Bastion-[\\d.]+\\.apk$"
+        },
+        {
+          "label": "Windows",
+          "kind": "EXE",
+          "platform": "windows",
+          "match": "_x64-setup\\.exe$",
+          "hint": "Installation rapide, par utilisateur"
+        },
+        {
+          "label": "Windows",
+          "kind": "MSI",
+          "platform": "windows",
+          "match": "_x64_en-US\\.msi$",
+          "hint": "Installation classique, toute la machine"
+        }
       ]
     },
     {
@@ -57,7 +74,12 @@
         "docs/screenshots/04-recompiler.jpg"
       ],
       "downloads": [
-        { "label": "Windows", "kind": "MSI", "platform": "windows", "match": "\\.msi$" }
+        {
+          "label": "Windows",
+          "kind": "MSI",
+          "platform": "windows",
+          "match": "\\.msi$"
+        }
       ]
     },
     {
@@ -78,7 +100,13 @@
       "logo": "docs/logo.png",
       "screenshots": [],
       "downloads": [
-        { "label": "Windows", "kind": "EXE", "platform": "windows", "match": "^ReplScope\\.exe$", "hint": "Portable, aucune installation" }
+        {
+          "label": "Windows",
+          "kind": "EXE",
+          "platform": "windows",
+          "match": "^ReplScope\\.exe$",
+          "hint": "Portable, aucune installation"
+        }
       ]
     },
     {
@@ -100,7 +128,12 @@
       "logoScale": 1.12,
       "screenshots": [],
       "downloads": [
-        { "label": "Android", "kind": "APK", "platform": "android", "match": "^keyra-v[\\d.]+\\.apk$" }
+        {
+          "label": "Android",
+          "kind": "APK",
+          "platform": "android",
+          "match": "^keyra-v[\\d.]+\\.apk$"
+        }
       ]
     },
     {
@@ -129,9 +162,24 @@
         "docs/images/windows-shortcuts.png"
       ],
       "downloads": [
-        { "label": "Android", "kind": "APK", "platform": "android", "match": "Android-v[\\d.]+\\.apk$" },
-        { "label": "Agent Windows", "kind": "ZIP", "platform": "windows", "match": "Windows-x64-v[\\d.]+\\.zip$" },
-        { "label": "Agent Raspberry Pi", "kind": "TAR.GZ", "platform": "linux", "match": "RaspberryPi-v[\\d.]+\\.tar\\.gz$" }
+        {
+          "label": "Android",
+          "kind": "APK",
+          "platform": "android",
+          "match": "Android-v[\\d.]+\\.apk$"
+        },
+        {
+          "label": "Agent Windows",
+          "kind": "ZIP",
+          "platform": "windows",
+          "match": "Windows-x64-v[\\d.]+\\.zip$"
+        },
+        {
+          "label": "Agent Raspberry Pi",
+          "kind": "TAR.GZ",
+          "platform": "linux",
+          "match": "RaspberryPi-v[\\d.]+\\.tar\\.gz$"
+        }
       ]
     },
     {
@@ -150,7 +198,10 @@
         "App Android : notification média, PiP, plein écran"
       ],
       "notice": "Les scripts modifient les fichiers de jellyfin-web : sauvegardez votre installation avant. L'APK Android est un build debug, pour les essais.",
-      "logo": { "repo": "0x80070006/LUMO", "path": "assets/branding/lumo-logo.png" },
+      "logo": {
+        "repo": "0x80070006/LUMO",
+        "path": "assets/branding/lumo-logo.png"
+      },
       "logoBg": "#16130c",
       "logoPad": 0.2,
       "notesFrom": "changelog",
@@ -162,8 +213,56 @@
         "docs/screenshots/chargement.jpg"
       ],
       "downloads": [
-        { "label": "Thème Jellyfin", "kind": "ZIP", "platform": "linux windows", "source": "tag-zip", "hint": "Installateurs Linux et Windows inclus" },
-        { "label": "App Android", "kind": "APK", "platform": "android", "repo": "0x80070006/LUMO", "match": "\\.apk$" }
+        {
+          "label": "Thème Jellyfin",
+          "kind": "ZIP",
+          "platform": "linux windows",
+          "source": "tag-zip",
+          "hint": "Installateurs Linux et Windows inclus"
+        },
+        {
+          "label": "App Android",
+          "kind": "APK",
+          "platform": "android",
+          "repo": "0x80070006/LUMO",
+          "match": "\\.apk$"
+        }
+      ]
+    },
+    {
+      "id": "holowave",
+      "name": "HOLOWAVE",
+      "repo": "0x80070006/holowave-deco",
+      "category": "Musique",
+      "tagline": "Le salon d'écoute hors ligne, avec paroles synchronisées.",
+      "description": "HOLOWAVE lit la musique stockée sur votre téléphone : pas de compte, pas de streaming, pas de pub. L'interface Art Déco emprunte aux bars à cocktails des années 1930, et dans le lecteur le vinyle sort de sa pochette et tourne pendant la lecture. Les paroles défilent en temps réel, comme sur Spotify, mais restent disponibles hors ligne.",
+      "highlights": [
+        "Discothèque locale : albums, artistes, dossiers, titres et playlists",
+        "Paroles synchronisées : fichier .lrc, paroles intégrées au MP3/FLAC, puis LRCLIB",
+        "Paroles gardées sur l'appareil, « Tout préparer » pour toute la discothèque",
+        "Lecture écran éteint, jaquette Art Déco sur l'écran de verrouillage",
+        "Coups de cœur, file d'attente, aléatoire et répétition",
+        "Aucun traqueur, une seule connexion (LRCLIB) désactivable"
+      ],
+      "logo": "docs/logo.png",
+      "logoScale": 1.08,
+      "screenshots": [
+        "docs/screenshots/01-bibliotheque.jpg",
+        "docs/screenshots/02-lecteur.jpg",
+        "docs/screenshots/03-paroles.jpg",
+        "docs/screenshots/04-album.jpg",
+        "docs/screenshots/05-ecran-verrouillage.jpg",
+        "docs/screenshots/07-artistes.jpg",
+        "docs/screenshots/11-notification.jpg"
+      ],
+      "downloads": [
+        {
+          "label": "Android",
+          "kind": "APK",
+          "platform": "android",
+          "match": "^HOLOWAVE\\.apk$",
+          "hint": "Android 10 ou plus récent"
+        }
       ]
     },
     {
@@ -196,7 +295,12 @@
         "docs/media/11-arret-annulable.png"
       ],
       "downloads": [
-        { "label": "Android", "kind": "APK", "platform": "android", "match": "^Cap-[\\d.]+\\.apk$" }
+        {
+          "label": "Android",
+          "kind": "APK",
+          "platform": "android",
+          "match": "^Cap-[\\d.]+\\.apk$"
+        }
       ]
     }
   ]

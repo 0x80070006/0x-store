@@ -8,7 +8,7 @@ window.STORE_DATA = {
     "repo": "0x80070006/0x-store",
     "apk": "0x-Store.apk"
   },
-  "generated": "2026-10-09T18:32:40+00:00",
+  "generated": "2026-10-09T20:34:50+00:00",
   "apps": [
     {
       "id": "bastion",
@@ -62,7 +62,7 @@ window.STORE_DATA = {
           "file": "Bastion-0.3.1.apk",
           "version": "v0.3.1",
           "size": 8066488,
-          "count": 2
+          "count": 6
         },
         {
           "label": "Windows",
@@ -250,7 +250,7 @@ window.STORE_DATA = {
           "file": "keyra-v12.0.apk",
           "version": "v12.0",
           "size": 1514385,
-          "count": 1
+          "count": 2
         }
       ]
     },
@@ -328,7 +328,7 @@ window.STORE_DATA = {
           "file": "TelecomHand-Android-v1.8.0.apk",
           "version": "v1.8.0",
           "size": 24961342,
-          "count": 3
+          "count": 4
         },
         {
           "label": "Agent Windows",
@@ -438,6 +438,91 @@ window.STORE_DATA = {
           "version": "v1.3.0",
           "size": 10555102,
           "count": 4
+        }
+      ]
+    },
+    {
+      "id": "holowave",
+      "name": "HOLOWAVE",
+      "category": "Musique",
+      "tagline": "Le salon d'écoute hors ligne, avec paroles synchronisées.",
+      "description": "HOLOWAVE lit la musique stockée sur votre téléphone : pas de compte, pas de streaming, pas de pub. L'interface Art Déco emprunte aux bars à cocktails des années 1930, et dans le lecteur le vinyle sort de sa pochette et tourne pendant la lecture. Les paroles défilent en temps réel, comme sur Spotify, mais restent disponibles hors ligne.",
+      "highlights": [
+        "Discothèque locale : albums, artistes, dossiers, titres et playlists",
+        "Paroles synchronisées : fichier .lrc, paroles intégrées au MP3/FLAC, puis LRCLIB",
+        "Paroles gardées sur l'appareil, « Tout préparer » pour toute la discothèque",
+        "Lecture écran éteint, jaquette Art Déco sur l'écran de verrouillage",
+        "Coups de cœur, file d'attente, aléatoire et répétition",
+        "Aucun traqueur, une seule connexion (LRCLIB) désactivable"
+      ],
+      "notesFrom": null,
+      "beta": false,
+      "notice": null,
+      "repo": "0x80070006/holowave-deco",
+      "url": "https://github.com/0x80070006/holowave-deco",
+      "license": "MIT",
+      "language": "Kotlin",
+      "stars": 0,
+      "version": "v2.0.0",
+      "releaseName": "HOLOWAVE 2.0 — Art Déco",
+      "releaseUrl": "https://github.com/0x80070006/holowave-deco/releases/tag/v2.0.0",
+      "date": "2026-10-09T20:33:34Z",
+      "notes": "Refonte complète de HoloWave : lecteur de musique hors ligne façon jazz-bar Art Déco.\n\n- Discothèque locale (albums, artistes, dossiers, titres, playlists, coups de cœur)\n- Pochette et vinyle qui tourne pendant la lecture\n- Paroles synchronisées hors ligne : intégrées au fichier, import .lrc, ou LRCLIB (gardées en cache)\n- Lecture en veille, lecteur système sur l'écran de verrouillage : piste glissable, couleurs de l'album, bouton coup de cœur\n- Aucun compte, aucun traqueur ; seule connexion possible : lrclib.net en HTTPS (désactivable)\n\nAndroid 10 ou plus récent.\n\n**SHA-256** `\\09495714b729a907c7fc0e74b60f12720d9c7b41d7ff250fbf15b61d7da5a52f`\n**Certificat de signature (SHA-256)** `18e5200893891d6d54fdba71740fae793bdbb3da244f35564dbe0e090e95146f`",
+      "logo": {
+        "src": "assets/apps/holowave/logo.png",
+        "w": 512,
+        "h": 512,
+        "logoScale": 1.08
+      },
+      "screenshots": [
+        {
+          "src": "assets/apps/holowave/shot-01.jpg",
+          "w": 540,
+          "h": 1212
+        },
+        {
+          "src": "assets/apps/holowave/shot-02.jpg",
+          "w": 540,
+          "h": 1212
+        },
+        {
+          "src": "assets/apps/holowave/shot-03.jpg",
+          "w": 540,
+          "h": 1212
+        },
+        {
+          "src": "assets/apps/holowave/shot-04.jpg",
+          "w": 540,
+          "h": 1212
+        },
+        {
+          "src": "assets/apps/holowave/shot-05.jpg",
+          "w": 540,
+          "h": 1212
+        },
+        {
+          "src": "assets/apps/holowave/shot-06.jpg",
+          "w": 540,
+          "h": 1212
+        },
+        {
+          "src": "assets/apps/holowave/shot-07.jpg",
+          "w": 540,
+          "h": 1212
+        }
+      ],
+      "downloads": [
+        {
+          "label": "Android",
+          "kind": "APK",
+          "platform": "android",
+          "match": "^HOLOWAVE\\.apk$",
+          "hint": "Android 10 ou plus récent",
+          "url": "https://github.com/0x80070006/holowave-deco/releases/download/v2.0.0/HOLOWAVE.apk",
+          "file": "HOLOWAVE.apk",
+          "version": "v2.0.0",
+          "size": 4433982,
+          "count": 0
         }
       ]
     },
