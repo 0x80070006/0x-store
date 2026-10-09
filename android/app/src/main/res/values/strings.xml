@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">0x Store</string>
+    <string name="downloading">Téléchargement de %1$s…</string>
+    <string name="download_done">%1$s téléchargé dans Téléchargements</string>
+    <string name="download_failed">Échec du téléchargement de %1$s</string>
+    <string name="install_permission_title">Autoriser les installations</string>
+    <string name="install_permission_message">Pour installer les applications, autorisez 0x Store à installer des applications inconnues. Le téléchargement reprendra ensuite.</string>
+    <string name="open_settings">Ouvrir les réglages</string>
+    <string name="cancel">Annuler</string>
+</resources>

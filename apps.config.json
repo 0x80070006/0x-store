@@ -1,0 +1,203 @@
+{
+  "store": {
+    "name": "0x Store",
+    "owner": "0x80070006",
+    "tagline": "Des applications libres, sans pistage, à télécharger en direct depuis leurs releases officielles.",
+    "featured": "bastion",
+    "repo": "0x80070006/0x-store",
+    "apk": "0x-Store.apk"
+  },
+  "apps": [
+    {
+      "id": "bastion",
+      "name": "Bastion",
+      "repo": "0x80070006/bastion",
+      "category": "Sécurité",
+      "tagline": "Anti-perte et anti-vol pour Android, piloté depuis votre PC.",
+      "description": "Bastion protège votre téléphone Android ou GrapheneOS sans Google, sans compte cloud et sans télémétrie. La console Windows localise, fait sonner, verrouille ou efface l'appareil à distance. Tout transite par un relay auto-hébergeable qui ne voit que des blobs chiffrés et signés de bout en bout.",
+      "highlights": [
+        "Localisation, suivi en continu et géorepérage avec alertes entrée/sortie",
+        "Verrouillage et effacement à distance contresignés par une clé privilégiée",
+        "Mode perdu plein écran, sirène et annonce vocale",
+        "Caméra, micro et interphone deux voies chiffrés",
+        "Photo anti-intrusion et détection de changement de SIM",
+        "Relay intégré ou auto-hébergé, sans Google Play Services"
+      ],
+      "logo": "branding/icon.svg",
+      "screenshots": [
+        "assets/screenshots/desktop-console.png",
+        "assets/screenshots/phone-health.png"
+      ],
+      "downloads": [
+        { "label": "Android", "kind": "APK", "platform": "android", "match": "^Bastion-[\\d.]+\\.apk$" },
+        { "label": "Windows", "kind": "EXE", "platform": "windows", "match": "_x64-setup\\.exe$", "hint": "Installation rapide, par utilisateur" },
+        { "label": "Windows", "kind": "MSI", "platform": "windows", "match": "_x64_en-US\\.msi$", "hint": "Installation classique, toute la machine" }
+      ]
+    },
+    {
+      "id": "apklab",
+      "name": "APK Lab",
+      "repo": "0x80070006/apklab",
+      "category": "Développement",
+      "tagline": "Décompile, explore, recompile et signe des APK, en local.",
+      "description": "APK Lab enveloppe jadx et apktool dans une interface web locale. Déposez un APK ou un XAPK : le code Java est reconstruit, le smali et les ressources extraits, le manifeste résumé. Recompilez et signez ensuite l'APK en un clic pour le tester sur un appareil. Rien ne quitte votre machine.",
+      "highlights": [
+        "APK, XAPK, APKS et APKM avec extraction automatique des splits",
+        "Code Java via jadx, smali et ressources via apktool",
+        "Aperçu du manifeste : permissions sensibles, composants exportés, technos détectées",
+        "Recherche plein texte et regex, requêtes prêtes à l'emploi (secrets, URLs, Firebase…)",
+        "Recompilation, zipalign et signature en un clic",
+        "Prérequis : Python 3.10+, JDK 17+ et build-tools Android"
+      ],
+      "logo": "docs/logo.webp",
+      "screenshots": [
+        "docs/screenshots/01-accueil.jpg",
+        "docs/screenshots/02-apercu.jpg",
+        "docs/screenshots/03-fichiers.jpg",
+        "docs/screenshots/04-recompiler.jpg"
+      ],
+      "downloads": [
+        { "label": "Windows", "kind": "MSI", "platform": "windows", "match": "\\.msi$" }
+      ]
+    },
+    {
+      "id": "replscope",
+      "name": "ReplScope",
+      "repo": "0x80070006/ReplScope",
+      "category": "Administration système",
+      "tagline": "Moniteur de réplication Active Directory, en lecture seule.",
+      "description": "ReplScope est un moniteur de réplication Active Directory moderne, inspiré de replmon, pour Windows Server 2022 à 2026. Il n'écrit jamais dans l'annuaire et ne stocke aucun identifiant. Exécutable autonome : aucun runtime .NET à installer.",
+      "highlights": [
+        "Arbre Forêt → Site → DC → partitions avec état agrégé",
+        "Détection des changements répliqués via le suivi des USN",
+        "Détail des objets créés, modifiés ou supprimés pour chaque lien",
+        "Onglets Métriques et Historique (30 jours), export CSV",
+        "Mode ligne de commande pour la supervision et les tâches planifiées",
+        "Connexion « en tant que » depuis un poste hors domaine"
+      ],
+      "logo": "docs/logo.png",
+      "screenshots": [],
+      "downloads": [
+        { "label": "Windows", "kind": "EXE", "platform": "windows", "match": "^ReplScope\\.exe$", "hint": "Portable, aucune installation" }
+      ]
+    },
+    {
+      "id": "keyra",
+      "name": "Keyra",
+      "repo": "0x80070006/keyra",
+      "category": "Clavier",
+      "tagline": "Clavier AZERTY français, réactif et 100 % hors ligne.",
+      "description": "Keyra est un clavier Android local, écrit en Kotlin avec un cœur en Rust. Il n'a aucune permission réseau et chiffre tout ce qu'il conserve. Correction et prédiction françaises tournent entièrement sur l'appareil.",
+      "highlights": [
+        "Aucune permission INTERNET, tableau de transparence intégré",
+        "Correction et prédiction en Rust : 1,5 ms par frappe",
+        "AZERTY, BÉPO, QWERTY, QWERTZ et Dvorak",
+        "Données chiffrées XChaCha20-Poly1305, clé dans le Keystore",
+        "Presse-papiers éphémère, extraits de texte, emoji en français",
+        "Geste panique qui détruit la clé de chiffrement"
+      ],
+      "logo": "fastlane/metadata/android/fr-FR/images/icon.png",
+      "logoScale": 1.12,
+      "screenshots": [],
+      "downloads": [
+        { "label": "Android", "kind": "APK", "platform": "android", "match": "^keyra-v[\\d.]+\\.apk$" }
+      ]
+    },
+    {
+      "id": "telecomhand",
+      "name": "TelecomHand",
+      "repo": "0x80070006/TelecomHand",
+      "category": "Contrôle à distance",
+      "tagline": "Votre téléphone devient la télécommande de votre PC.",
+      "description": "TelecomHand transforme un téléphone Android en télécommande pour un ordinateur Windows ou une machine Linux / Raspberry Pi, sur votre réseau privé. Installez l'agent sur la machine à contrôler, puis l'application sur le téléphone.",
+      "highlights": [
+        "Pavé tactile avec gestes et saisie clavier",
+        "Aperçu de l'écran distant",
+        "Raccourcis et commandes système selon l'agent",
+        "Agents Windows et Raspberry Pi / Linux",
+        "Conçu pour un réseau privé, par exemple Tailscale"
+      ],
+      "notice": "Agents v1.7.0 : définissez dans config.json un code unique d'au moins 16 caractères et n'exposez pas l'agent à Internet.",
+      "logo": "docs/images/telecomhand-logo.png",
+      "logoScale": 1.06,
+      "screenshots": [
+        "docs/images/home.png",
+        "docs/images/trackpad.png",
+        "docs/images/keyboard.png",
+        "docs/images/screen-preview.png",
+        "docs/images/devices-list.png",
+        "docs/images/windows-shortcuts.png"
+      ],
+      "downloads": [
+        { "label": "Android", "kind": "APK", "platform": "android", "match": "Android-v[\\d.]+\\.apk$" },
+        { "label": "Agent Windows", "kind": "ZIP", "platform": "windows", "match": "Windows-x64-v[\\d.]+\\.zip$" },
+        { "label": "Agent Raspberry Pi", "kind": "TAR.GZ", "platform": "linux", "match": "RaspberryPi-v[\\d.]+\\.tar\\.gz$" }
+      ]
+    },
+    {
+      "id": "lumo",
+      "name": "Lumo",
+      "repo": "0x80070006/Noctafin-jellyfin-theme-",
+      "category": "Multimédia",
+      "tagline": "Thème cinématique et extension d'interface pour Jellyfin.",
+      "description": "Lumo transforme l'interface web de Jellyfin 12 : Hero cinématique, rails de plateformes et de studios, fiches de film repensées, fond nébuleuse animé. L'installateur Linux ou Windows injecte le CSS et le runtime directement dans jellyfin-web, et se désinstalle proprement. Une application Android compagnon ouvre l'interface Lumo en plein écran avec contrôles multimédia et Picture-in-Picture.",
+      "highlights": [
+        "Hero cinématique avec rotation fluide des fonds",
+        "Rails plateformes et studios avec logos officiels",
+        "Fiches de film : synopsis, réalisateur, distribution",
+        "Écran de démarrage et loaders liquides",
+        "Installateurs Linux et Windows, désinstallation réversible",
+        "App Android : notification média, PiP, plein écran"
+      ],
+      "notice": "Les scripts modifient les fichiers de jellyfin-web : sauvegardez votre installation avant. L'APK Android est un build debug, pour les essais.",
+      "logo": { "repo": "0x80070006/LUMO", "path": "assets/branding/lumo-logo.png" },
+      "logoBg": "#16130c",
+      "logoPad": 0.2,
+      "notesFrom": "changelog",
+      "screenshots": [
+        "docs/screenshots/accueil.jpg",
+        "docs/screenshots/fiche-film.jpg",
+        "docs/screenshots/studio.jpg",
+        "docs/screenshots/anime.jpg",
+        "docs/screenshots/chargement.jpg"
+      ],
+      "downloads": [
+        { "label": "Thème Jellyfin", "kind": "ZIP", "platform": "linux windows", "source": "tag-zip", "hint": "Installateurs Linux et Windows inclus" },
+        { "label": "App Android", "kind": "APK", "platform": "android", "repo": "0x80070006/LUMO", "match": "\\.apk$" }
+      ]
+    },
+    {
+      "id": "cap",
+      "name": "Cap",
+      "repo": "0x80070006/cap",
+      "category": "Navigation",
+      "beta": true,
+      "tagline": "GPS libre et privé : navigation virage par virage, sans compte.",
+      "description": "Cap est une application de navigation Android inspirée de l'ergonomie de Waze, sans compte, sans pistage, sans publicité et sans Google Play Services. Les alertes que vous signalez restent sur votre téléphone, chiffrées, et ne sont jamais partagées. En développement actif : des bugs sont possibles.",
+      "highlights": [
+        "Carte vectorielle OpenStreetMap, thème jour/nuit automatique",
+        "Jusqu'à 3 itinéraires, navigation vocale virage par virage",
+        "Proposition de déviation quand un ralentissement est détecté",
+        "Ajout d'arrêt en route avec détour estimé",
+        "Alertes personnelles 100 % locales et chiffrées",
+        "Tableau de bord vie privée avec journal réseau"
+      ],
+      "notice": "Pas de trafic en direct ni de mode hors ligne pour l'instant. Le guidage peut se tromper : respectez toujours la signalisation.",
+      "logo": "docs/media/logo.png",
+      "logoScale": 1.04,
+      "screenshots": [
+        "docs/media/02-carte.png",
+        "docs/media/04-previsualisation.png",
+        "docs/media/05-navigation.png",
+        "docs/media/06-que-voyez-vous.png",
+        "docs/media/09-ajout-arret.png",
+        "docs/media/08-pause.png",
+        "docs/media/10-favori.png",
+        "docs/media/11-arret-annulable.png"
+      ],
+      "downloads": [
+        { "label": "Android", "kind": "APK", "platform": "android", "match": "^Cap-[\\d.]+\\.apk$" }
+      ]
+    }
+  ]
+}

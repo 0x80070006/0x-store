@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Rounded plate keeps the mark legible over the stripes -->
+    <path android:fillColor="#1C2142"
+        android:pathData="M40,34h28a8,8 0,0 1,8 8v24a8,8 0,0 1,-8 8h-28a8,8 0,0 1,-8 -8v-24a8,8 0,0 1,8 -8z" />
+    <!-- Download arrow -->
+    <path android:fillColor="#00000000" android:strokeColor="#EFE2BA" android:strokeWidth="4.5"
+        android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M54,42v16M47,52l7,7 7,-7M45,66h18" />
+</vector>
